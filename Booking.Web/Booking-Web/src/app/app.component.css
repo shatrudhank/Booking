@@ -1,0 +1,35 @@
+.booking-app-header {
+    height: calc(100vh - 50px);
+    background: linear-gradient(to right,#1a2e35 55%, #1cbbb4 45%);
+    color: white;
+  }
+  .navbar-brand span{
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .booking-app-navbar-brand{
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-right: 20vw
+  }
+  
+  li.booking-app-nav-item a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+  @media screen and (max-width: 995px) {
+    .booking-app-navbar-brand {
+      display: none;
+    }
+  }
+  
+  
+  
+  
