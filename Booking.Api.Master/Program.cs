@@ -12,11 +12,21 @@ builder.Services.AddDbContext<AdminDbContext>((option) =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));
 });
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 builder.Services.AddScoped<ICountryService, CountryService>();
 builder.Services.AddScoped<IRepository<Country>, CountryRepository>();
 
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.MapControllers();
 app.MapGet("/", () => "Hello World!");
