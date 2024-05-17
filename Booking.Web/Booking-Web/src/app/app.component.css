@@ -1,8 +1,8 @@
-.booking-app-header {
-    height: calc(100vh - 50px);
-    background: linear-gradient(to right,#1a2e35 55%, #1cbbb4 45%);
+.booking-app-menu{
+    background: #1a2e35 ;
     color: white;
   }
+
   .navbar-brand span{
     font-weight: bold;
     font-size: 24px;

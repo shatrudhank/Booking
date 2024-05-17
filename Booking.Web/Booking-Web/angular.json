@@ -28,9 +28,14 @@
             ],
             "styles": [
               "bootstrap/dist/css/bootstrap.min.css",
+              "font-awesome/css/font-awesome.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "jquery/dist/jquery.min.js",
+              "bootstrap/dist/js/bootstrap.min.js",
+              "popper.js/dist/popper.min.js"
+            ]
           },
           "configurations": {
             "production": {

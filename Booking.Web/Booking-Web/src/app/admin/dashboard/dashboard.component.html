@@ -1,0 +1,72 @@
+<div class="dashboard-horizontal"></div>
+<div class="row">
+<div class="col-md-2">
+    <nav class="navbar navbar-expand-lg navbar-dark">  
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="admin-country" >  <span class="nav-link-text">Home</span>  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-collapse"
+                       href="#"
+                       id="hasSubItems"
+                       data-toggle="collapse"
+                       data-target="#collapseSubItems2"
+                       aria-controls="collapseSubItems2"
+                       aria-expanded="false"> Services </a>
+                    <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">Item 2.1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">Item 2.2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Gallery </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-collapse"
+                       href="#"
+                       id="hasSubItems"
+                       data-toggle="collapse"
+                       data-target="#collapseSubItems4"
+                       aria-controls="collapseSubItems4"
+                       aria-expanded="false"> Contact us </a>
+                    <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">Item 4.1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">Item 4.2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">Item 4.2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+    
+            </ul>
+        </div>
+    </nav>
+    
+</div>
+<div class="col-md-10">
+   <router-outlet></router-outlet>
+</div>
+</div>

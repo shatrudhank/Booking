@@ -1,0 +1,52 @@
+.dashboard-horizontal{
+    background-color: #1cbbb4;
+    height: 0.5vh;
+}
+.navbar{
+    padding: 0;
+}
+.nav-link:hover {
+    transition: all 0.4s;
+}
+
+.nav-link-collapse:after {
+    float: right;
+    content: '\f067';
+    font-family: 'FontAwesome';
+}
+.nav-link-text{
+    color: white;
+}
+.nav-link-show:after {
+    float: right;
+    content: '\f068';
+    font-family: 'FontAwesome';
+}
+
+.nav-item ul.nav-second-level {
+    padding-left: 0;
+}
+
+.nav-item ul.nav-second-level > .nav-item {
+    padding-left: 20px;
+}
+.nav-item a{
+    padding: 8px 16px;
+    color: white;
+}
+
+.sidenav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100vh;
+    margin-top:0;
+    background: #1a2e35;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navbar-expand-lg .sidenav {
+    flex-direction: column;
+}
