@@ -15,7 +15,7 @@ namespace Booking.Api.Master.Controllers
 
 
         [HttpGet]
-        [Route("api/country/getCountryList")]
+        [Route("api/country/getCountries")]
         public IActionResult GetCountryList()
         {
             return Ok(this._countryService.GetCountries());

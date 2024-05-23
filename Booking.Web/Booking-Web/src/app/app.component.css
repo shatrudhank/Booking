@@ -9,6 +9,9 @@
     color: white;
   }
   
+  .navbar{
+    height: 7vh;
+  }
   .booking-app-navbar-brand{
     font-weight: bold;
     font-size: 16px;
@@ -23,6 +26,10 @@
     text-decoration: none;
     color: white;
     text-align: center;
+  }
+  .booking-app-nav-item:hover{
+    background-color: #1cbbb4;
+    color: black;
   }
   @media screen and (max-width: 995px) {
     .booking-app-navbar-brand {

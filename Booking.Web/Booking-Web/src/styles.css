@@ -6,6 +6,12 @@ body{
     overflow-x: hidden;
 }
 
+.booking-right{
+  float: right;
+}
+.booking-center{
+  justify-content: center;
+}
 /* footer section*/
 .booking-footer-section {
     display: -webkit-box;
@@ -199,7 +205,7 @@ body{
   .booking-form-add-icon{
     font-size: 24px;
     float: right;
-    color: #1cbbb4;
+    color: white;
     padding-bottom: 10px;
   }
   .booking-panel{
@@ -221,24 +227,84 @@ body{
   align-content: center;
 }
 
-
-
 .booking-form-action-content {
   display: none;
   position: absolute;
+  right: 80px;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 70px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .booking-form-action-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 8px 12px;
   text-decoration: none;
   display: block;
 }
 
-.booking-form-action-content a:hover {background-color: #ddd;}
+.booking-form-action:hover  .booking-form-action-content {
+  display: block;
+}
+.booking-form-action-content a:hover{
+  background-color: #1cbbb4;
+}
 
-.booking-form-action-icon:hover + .booking-form-action-content {display: block;}
+/*Pagination Start*/
+.pagination{
+  justify-content: center;
+}
+.pagination > li > a
+{
+    background-color: #1a2e35;
+    color: white;
+}
+.pagination > .active > a
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: black;
+    background-color: #1cbbb4;
+}
+.pagination > .active > a
+{
+  color: black;
+  background-color: #1cbbb4;
+  cursor: not-allowed;
+}
+
+/*Pagination End*/
+
+
+/* Form Start*/
+.booking-form-label{
+  float: right;
+  font-weight: 500;
+}
+
+.booking-for-row{
+  padding-bottom: 10px;
+}
+
+.booking-button{
+  float: right;
+  margin-top: 30px;
+  background-color: #1a2e35;
+  color: white;
+}
+.booking-button:hover{
+  background-color: #1cbbb4;
+  color: black;
+}
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+/* Form End*/

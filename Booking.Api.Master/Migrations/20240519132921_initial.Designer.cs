@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Booking.Api.Master.Migrations
 {
     [DbContext(typeof(AdminDbContext))]
-    [Migration("20240516125247_initial")]
+    [Migration("20240519132921_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -82,6 +82,9 @@ namespace Booking.Api.Master.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<short>("Code")
+                        .HasColumnType("smallint");
 
                     b.Property<string>("Name")
                         .IsRequired()

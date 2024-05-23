@@ -33,8 +33,7 @@
             ],
             "scripts": [
               "jquery/dist/jquery.min.js",
-              "bootstrap/dist/js/bootstrap.min.js",
-              "popper.js/dist/popper.min.js"
+              "bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {

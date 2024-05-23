@@ -50,3 +50,9 @@
 .navbar-expand-lg .sidenav {
     flex-direction: column;
 }
+.nav-link{
+    margin: 2px 4px;
+}
+.nav-item:hover{
+    background-color: #1cbbb4;
+}

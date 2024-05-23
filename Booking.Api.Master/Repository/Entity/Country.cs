@@ -7,8 +7,12 @@ namespace Booking.Api.Master.Repository.Entity
         [Key]
         public int Id { get; set; }
 
+
+        [Required]
+        public short Code {  get; set; }
+
         [Required]
         [MaxLength(255)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 }

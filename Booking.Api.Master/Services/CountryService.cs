@@ -19,7 +19,8 @@ namespace Booking.Api.Master.Services
             Country country = new Country()
             {
                 Id = countryModel.Id,
-                Name = countryModel.Name
+                Name = countryModel.Name,
+                Code=countryModel.Code
             };
 
             _repository.Add(country);
@@ -34,7 +35,8 @@ namespace Booking.Api.Master.Services
             return new CountryModel()
             {
                 Id = country.Id,
-                Name = country.Name
+                Name = country.Name ?? string.Empty,
+                Code = country.Code
             };
         }
 
@@ -46,7 +48,8 @@ namespace Booking.Api.Master.Services
                 countryList.Add(new CountryModel()
                 {
                     Id = country.Id,
-                    Name = country.Name,
+                    Name = country.Name??string.Empty,
+                    Code= country.Code
                 });
             }
             return countryList;

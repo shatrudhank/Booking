@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header"></div>
+                <div class="card-body">
+                    <form #CountryForm="ngForm">
+                        <div class="row form-group booking-for-row">
+                            <div class="col-md-4">
+                                <label class="booking-form-label">Country</label>
+                            </div>              
+                            <div class="col-md-3">
+                                <input type="text" required="required" placeholder="Country" #name="ngModel"  name="name"
+                                class="form-control booking-form-input ng-touched" [(ngModel)]="country.name"/>
+                                <span class="text-danger" *ngIf="name.invalid && (name.dirty || name.touched) ">Country name is required</span>
+                            </div>               
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <label class="booking-form-label">Country Code</label>
+                            </div>              
+                            <div class="col-md-3">
+                                <input type="number"  placeholder="Country Code" class="form-control" required="required"
+                                [(ngModel)]="country.code" name="code" #code="ngModel"/>
+                                <span class="text-danger" *ngIf="code.invalid && (code.dirty || code.touched) ">Country code is required</span>
+                            </div>               
+                        </div>
+                        <div class="row">
+                            <div class="col-md-11">
+                                <button type="button" class="btn booking-button" [disabled]="CountryForm.invalid" (click)="add()">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+  
+    </div>
+</div>

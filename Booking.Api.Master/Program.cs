@@ -13,6 +13,15 @@ builder.Services.AddDbContext<AdminDbContext>((option) =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));
 });
 
+builder.Services.AddCors((options) =>{
+    options.AddDefaultPolicy((policy) =>
+    {
+        policy.WithOrigins(builder.Configuration.GetSection("AllowedOrigin").Get<string[]>())
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -28,6 +37,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors();
 app.MapControllers();
 app.MapGet("/", () => "Hello World!");
 
